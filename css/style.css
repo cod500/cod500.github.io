@@ -483,18 +483,11 @@ BUTTONS
 }
 
 .c-btn--action {
-  background: #ff5782;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#ff5782),
-    color-stop(51%, #fd8596),
-    to(#ff5782)
-  );
-  background-image: -webkit-linear-gradient(left, #ff5782 0%, #fd8596 51%, #ff5782 100%);
+  background: #1f2949;
+  background-image: -webkit-gradient(linear, left top, right top);
+  /* background-image: -webkit-linear-gradient(left, #ff5782 0%, #fd8596 51%, #ff5782 100%);
   background-image: -o-linear-gradient(left, #ff5782 0%, #fd8596 51%, #ff5782 100%);
-  background-image: linear-gradient(to right, #ff5782 0%, #fd8596 51%, #ff5782 100%);
+  background-image: linear-gradient(to right, #ff5782 0%, #fd8596 51%, #ff5782 100%); */
   background-size: 200% auto;
   color: #fff;
 }
