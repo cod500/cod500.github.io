@@ -352,7 +352,7 @@ GENERAL CLASSES
 }
 .headline-row {
   display: flex;
-  padding: 100px 0 100px 0;
+  justify-content: center;
 }
 .c-headline span {
   color: #9599a7;
