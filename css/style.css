@@ -838,6 +838,33 @@ HOME PAGE CSS
   line-height: 1.9;
 }
 
+/* Styling for stacked images */
+.images-one img,
+  .images-two img,
+  .images-three img {
+    width: 25vw;
+    max-width: 415px;
+  }
+
+  .images-one {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .images-two {
+    position: relative;
+    top: -50px;
+    z-index: 5;
+    left: 22vw;
+  }
+  .images-three {
+    position: relative;
+    top: -100px;
+    z-index: 3;
+    left: 0;
+  }
+  /* End Styling for stacked images */
+
 /*-------------------
 [VIDEO SECTION]
 -------------------*/
@@ -2692,6 +2719,12 @@ RESPONSIVE CSS
   .solutions__screen {
     padding: 0 20px;
   }
+.images-one img,
+  .images-two img,
+  .images-three img {
+    width: 100%;
+    max-width: 415px;
+  }
   .video__action {
     -webkit-box-shadow: 0 0 0 35px rgba(255, 255, 255, 0.12), 0 0 0 95px rgba(255, 255, 255, 0.12);
     box-shadow: 0 0 0 35px rgba(255, 255, 255, 0.12), 0 0 0 95px rgba(255, 255, 255, 0.12);
@@ -2773,6 +2806,7 @@ RESPONSIVE CSS
   }
   .c-headline {
     margin-bottom: 35px;
+    margin-top: 40px;
   }
   .hero__info h2 {
     font-size: 36px;
@@ -2836,6 +2870,7 @@ RESPONSIVE CSS
 @media only screen and (max-width: 480px) {
   .c-headline {
     font-size: 0.75rem;
+    margin-top: 40px;
   }
   .c-headline h2 {
     font-size: 1.375rem;
