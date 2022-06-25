@@ -840,30 +840,30 @@ HOME PAGE CSS
 
 /* Styling for stacked images */
 .images-one img,
-  .images-two img,
-  .images-three img {
-    width: 25vw;
-    max-width: 415px;
-  }
+.images-two img,
+.images-three img {
+  width: 25vw;
+  max-width: 415px;
+}
 
-  .images-one {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  .images-two {
-    position: relative;
-    top: -50px;
-    z-index: 5;
-    left: 22vw;
-  }
-  .images-three {
-    position: relative;
-    top: -100px;
-    z-index: 3;
-    left: 0;
-  }
-  /* End Styling for stacked images */
+.images-one {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.images-two {
+  position: relative;
+  top: -50px;
+  z-index: 5;
+  left: 10vw;
+}
+.images-three {
+  position: relative;
+  top: -100px;
+  z-index: 6;
+  left: 20vw;
+}
+/* End Styling for stacked images */
 
 /*-------------------
 [VIDEO SECTION]
@@ -2719,7 +2719,7 @@ RESPONSIVE CSS
   .solutions__screen {
     padding: 0 20px;
   }
-.images-one img,
+  .images-one img,
   .images-two img,
   .images-three img {
     width: 100%;
