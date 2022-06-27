@@ -856,7 +856,9 @@ HOME PAGE CSS
   line-height: 1.9;
 }
 
-/* Styling for stacked images */
+/*-------------------
+[STACKED IMAGES]
+-------------------*/
 .images-one img,
 .images-two img,
 .images-three img {
@@ -881,7 +883,19 @@ HOME PAGE CSS
   z-index: 6;
   left: 20vw;
 }
-/* End Styling for stacked images */
+figcaption{
+  font-weight: 600;
+  margin-top: 2px;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+/*-------------------
+[END STACKED IMAGES]
+-------------------*/
 
 /*-------------------
 [VIDEO SECTION]
@@ -2935,6 +2949,9 @@ RESPONSIVE CSS
     top: -100px;
     z-index: 6;
     left: 0;
+  }
+  .modal-target{
+    pointer-events: none;
   }
 }
 

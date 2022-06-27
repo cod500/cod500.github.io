@@ -330,3 +330,7 @@ document.addEventListener('click', function (e) {
 	}
 });
 
+if(window.innerWidth < 994){
+	$('.modal-target').removeClass('modal-target');
+}
+
