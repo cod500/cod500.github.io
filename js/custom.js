@@ -303,10 +303,12 @@ var modalContent = document.getElementById('modal-content');
 var modalClose = document.getElementById('modal-close');
 modalClose.addEventListener('click', function () {
 	modal.style.display = "none";
+	document.body.classList.remove("remove-scrolling");
 });
 
 modal.addEventListener("click", function (e) {
 	modal.style.display = "none";
+	document.body.classList.remove("remove-scrolling");
 });
 
 modalContent.addEventListener("click", function (e) {
@@ -327,6 +329,7 @@ document.addEventListener('click', function (e) {
 		modal.style.display = "block";
 		modalImg.src = img.src;
 		captionText.innerHTML = img.alt;
+		document.body.classList.add("remove-scrolling");
 	}
 });
 

@@ -3069,3 +3069,7 @@ RESPONSIVE CSS
   text-decoration: none;
   cursor: pointer;
 } */
+
+.remove-scrolling {
+  overflow: hidden;
+}
