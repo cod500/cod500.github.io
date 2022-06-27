@@ -884,8 +884,8 @@ HOME PAGE CSS
   left: 20vw;
 }
 figcaption{
+  color: #4a4545;
   font-weight: 600;
-  margin-top: 2px;
   position: absolute;
   margin-right: auto;
   margin-left: auto;
