@@ -354,6 +354,7 @@ GENERAL CLASSES
   margin-bottom: 60px;
 }
 .headline-row {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -401,12 +402,18 @@ GENERAL CLASSES
   width: 100%;
   height: 100%;
 }
-
+.social-icons-container{
+  display: flex;
+  justify-content: center;
+}
+.c-social-icons{
+position: relative;
+}
 .c-social-icons li {
   display: inline-block;
   margin-right: 4px;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
 }
 .c-social-icons li a {
   display: block;
@@ -421,13 +428,21 @@ GENERAL CLASSES
   transition: all 0.3s ease-in-out;
 }
 .c-social-icons img {
-  width: 150px;
+  width: 100px;
 }
 .c-social-icons .amip-logo {
-  width: 40px;
+  width: 30px;
   display: inherit;
+  font-size: 20px;
+
+}
+.c-social-icons li .amip-span {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 900;
+  font-size: 20px;
+}
+.c-social-icons .makes-logo {
+  width: 90px;
 }
 
 /* --------------------------------
@@ -2448,6 +2463,113 @@ FOOTER CSS
 }
 
 /* --------------------------------
+MODAL
+-------------------------------- */
+.modal-target {
+  width: 300px;
+  border-radius: 5px;
+  cursor: zoom-in;
+  transition: 0.3s;
+}
+
+.modal-target:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 60%;
+  height: 0;
+  opacity: 1 !important;
+  max-width: 1200px;
+}
+
+.modal-content img{
+  border-radius: 4px;
+}
+
+/* Caption of Modal Image */
+.modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  color: #4a4545;
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 32px;
+}
+
+/* Add Animation */
+.modal-content,
+.modal-caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-atransform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.modal-container {
+  position: relative;
+}
+
+/* The Close Button */
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #5c595a;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* .modal-close:hover,
+.modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+.remove-scrolling {
+  overflow: hidden;
+}
+
+
+/* --------------------------------
 HELPER CLASSES
 -------------------------------- */
 .fl {
@@ -2797,6 +2919,23 @@ RESPONSIVE CSS
   .solutions__item {
     margin: 0 auto;
   }
+  .images-one{
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .images-two img {
+    position: relative;
+    top: -50px;
+    z-index: 5;
+    left: -10vw;
+  }
+  .images-three {
+    position: relative;
+    top: -100px;
+    z-index: 6;
+    left: 0;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -2972,104 +3111,4 @@ RESPONSIVE CSS
     -ms-transform: translate(0);
     transform: translate(0);
   }
-}
-
-/* Modal */
-.modal-target {
-  width: 300px;
-  border-radius: 5px;
-  cursor: zoom-in;
-  transition: 0.3s;
-}
-
-.modal-target:hover {
-  opacity: 0.7;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 60%;
-  height: 0;
-  opacity: 1 !important;
-  max-width: 1200px;
-}
-
-/* Caption of Modal Image */
-.modal-caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 1200px;
-  text-align: center;
-  color: #4a4545;
-  font-weight: 700;
-  font-size: 1em;
-  margin-top: 32px;
-}
-
-/* Add Animation */
-.modal-content,
-.modal-caption {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {
-    -webkit-atransform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-.modal-container {
-  position: relative;
-}
-
-/* The Close Button */
-.modal-close {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  color: #000;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* .modal-close:hover,
-.modal-close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-} */
-
-.remove-scrolling {
-  overflow: hidden;
 }

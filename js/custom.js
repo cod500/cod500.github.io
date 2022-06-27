@@ -296,40 +296,37 @@ $(window).on("scroll", function () {
 	startCounter();
 });
 
-// Modal Setup
+/* ========================================================== */
+/*   MODAL                                                 */
+/* ========================================================== */
 var modal = document.getElementById('modal');
 var modalContent = document.getElementById('modal-content');
 
-var modalClose = document.getElementById('modal-close');
-modalClose.addEventListener('click', function () {
-	modal.style.display = "none";
-	document.body.classList.remove("remove-scrolling");
+$('.modal-close').on('click', function () {
+	$(this).fadeOut(500);
+	$('body').removeClass("remove-scrolling");
 });
 
-modal.addEventListener("click", function (e) {
-	modal.style.display = "none";
-	document.body.classList.remove("remove-scrolling");
+$('.modal').on("click", function (e) {
+	$(this).fadeOut(500);
+	$('body').removeClass("remove-scrolling");
 });
 
-modalContent.addEventListener("click", function (e) {
+$('#modal-content').on("click", function (e) {
 	e.preventDefault();
 	e.stopPropagation();
 	e.stopImmediatePropagation();
 	return false;
 })
 
-
-
-// global handler
 document.addEventListener('click', function (e) {
 	if (e.target.className.indexOf('modal-target') !== -1) {
-		var img = e.target;
-		var modalImg = document.getElementById("modal-content");
-		var captionText = document.getElementById("modal-caption");
-		modal.style.display = "block";
-		modalImg.src = img.src;
-		captionText.innerHTML = img.alt;
-		document.body.classList.add("remove-scrolling");
+		let img = e.target;
+		$('#modal').show();
+		$('#modal-close').show();
+		$('#modal-content').attr("src", img.src);
+		$("#modal-caption").html(img.alt);
+		$('body').addClass("remove-scrolling");
 	}
 });
 
