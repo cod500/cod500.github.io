@@ -211,10 +211,9 @@ wow.init();
 /*   OnePage Navigation                                       */
 /* ========================================================== */
 
-$('#nav').onePageNav({
-	filter: ':not(.external)'
-});
-
+// $('#nav').onePageNav({
+// 	filter: ':not(.external)'
+// });
 
 /* ========================================================== */
 /*   Google Map                                               */

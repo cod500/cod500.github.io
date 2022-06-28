@@ -172,6 +172,7 @@ BASE CSS
 }
 
 html {
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -528,14 +529,30 @@ BOOTSTRAP OVERWRITE CSS
 .navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
+  line-height: 1.4;
 }
 .navbar-brand > img {
+  width: 200px;
   max-width: initial;
   max-height: 100%;
 }
+.navbar-brand .amip-logo{
+  width: 30px !important;
+}
+.amip-span-bold{
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 900 !important;
+  font-size: 22px;
+}
+.amip-span{
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 22px;
+}
 
 .navbar-nav {
-  padding: 4px 0;
+  padding: 0;
 }
 
 .nav > li > a {
@@ -605,10 +622,10 @@ BOOTSTRAP OVERWRITE CSS
 .navbar-default .navbar-nav > .active > a:hover {
   background: transparent;
   color: #fff;
-  opacity: 1;
+  opacity: 0.75;
 }
 
-.navbar-default .navbar-nav li.active a::after,
+
 .navbar-default .navbar-nav > li > a:hover::after {
   width: 12px;
   opacity: 1;
@@ -1527,9 +1544,9 @@ figcaption{
 }
 
 /*-------------------
-[BLOGS SECTION]
+[LIMS SECTION]
 -------------------*/
-.blog {
+.lims {
   overflow: hidden;
   background-color: #fff !important;
 }
@@ -2898,6 +2915,7 @@ RESPONSIVE CSS
   }
   .navbar-header {
     padding: 10px 0;
+    float: left;
   }
   .navbar-nav {
     background: #5691c8;
