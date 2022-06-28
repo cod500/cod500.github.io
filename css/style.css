@@ -529,30 +529,37 @@ BOOTSTRAP OVERWRITE CSS
 .navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
-  line-height: 1.4;
+  line-height: 0.9;
 }
 .navbar-brand > img {
-  width: 200px;
   max-width: initial;
   max-height: 100%;
 }
 .navbar-brand .amip-logo{
-  width: 30px !important;
+  width: 25px !important;
+}
+.navbar-brand .am-logo{
+  width: 155px!important;
 }
 .amip-span-bold{
   color: #fff;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 900 !important;
-  font-size: 22px;
+  font-size: 16px;
 }
 .amip-span{
   color: #fff;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .navbar-nav {
   padding: 0;
+  margin-right: -50px;
+}
+.navbar-toggle{
+  padding: 0!important;
+  margin-top: 0!important;
 }
 
 .nav > li > a {
@@ -569,6 +576,7 @@ BOOTSTRAP OVERWRITE CSS
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  padding: 0!important;
 }
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
@@ -576,7 +584,7 @@ BOOTSTRAP OVERWRITE CSS
   opacity: 1;
 }
 .navbar-default .navbar-nav > li > a::after {
-  content: "";
+  /* content: "";
   position: absolute;
   left: 2px;
   bottom: 8px;
@@ -587,7 +595,7 @@ BOOTSTRAP OVERWRITE CSS
   opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; */
 }
 .navbar-default .navbar-nav > li > a.-register {
   opacity: 1;
@@ -1834,7 +1842,7 @@ SUBSCRIBE SECTION CSS
   font-size: 0.875rem;
 }
 
-#googleMap {
+#am-graphic img {
   width: 100%;
   height: 444px;
   border-radius: 4px;
@@ -2915,16 +2923,10 @@ RESPONSIVE CSS
   }
   .navbar-header {
     padding: 10px 0;
-    float: left;
+    margin-left: -10px !important;
   }
   .navbar-nav {
-    background: #5691c8;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #457fca, #5691c8);
-    background: -webkit-gradient(linear, left top, right top, from(#457fca), to(#5691c8));
-    background: -webkit-linear-gradient(left, #457fca, #5691c8);
-    background: -o-linear-gradient(left, #457fca, #5691c8);
-    background: linear-gradient(to right, #457fca, #5691c8);
+
     min-height: 100vh;
   }
   .nav > li {
@@ -2941,6 +2943,15 @@ RESPONSIVE CSS
   }
   .navbar-default .navbar-nav > li > a:hover::after {
     display: none;
+  }
+  .navbar-brand{
+    padding: 0;
+  }
+  .navbar-brand .amip-logo{
+    width: 15px !important;
+  }
+  .navbar-brand .am-logo{
+    width: 125px!important;
   }
   .blog-header__content {
     margin-top: 160px;
