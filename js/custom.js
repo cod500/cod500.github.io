@@ -325,11 +325,11 @@ document.addEventListener('click', function (e) {
 		$('#modal-close').show();
 		$('#modal-content').attr("src", img.src);
 		$("#modal-caption").html(img.alt);
-		$('body').addClass("remove-scrolling");
+		// $('body').addClass("remove-scrolling");
 	}
 });
 
-if(window.innerWidth < 994){
+if (window.innerWidth < 994) {
 	$('.modal-target').removeClass('modal-target');
 }
 
