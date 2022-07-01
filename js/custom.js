@@ -303,12 +303,10 @@ var modalContent = document.getElementById('modal-content');
 
 $('.modal-close').on('click', function () {
 	$(this).fadeOut(500);
-	$('body').removeClass("remove-scrolling");
 });
 
 $('.modal').on("click", function (e) {
 	$(this).fadeOut(500);
-	$('body').removeClass("remove-scrolling");
 });
 
 $('#modal-content').on("click", function (e) {
@@ -325,7 +323,6 @@ document.addEventListener('click', function (e) {
 		$('#modal-close').show();
 		$('#modal-content').attr("src", img.src);
 		$("#modal-caption").html(img.alt);
-		// $('body').addClass("remove-scrolling");
 	}
 });
 
